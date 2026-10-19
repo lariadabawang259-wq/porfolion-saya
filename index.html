@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07070a">
 
-    <title>SYAHDAN PRATAMA | SISTEM INFORMASI JARINGAN APLIKASI</title>
+    <title>Syahdan Pratama | Programmer Website &amp; UI/UX</title>
 
-    <meta name="description" content="Portfolio Syahdan Pratama - Web Development, UI/UX, dan Digital Design.">
+    <meta name="description" content="Portfolio Syahdan Pratama, siswa SIJA yang fokus pada Web Development, UI/UX, dan Digital Design.">
     <meta name="author" content="Syahdan Pratama">
 
     <meta property="og:title" content="Syahdan Pratama | Portfolio">
     <meta property="og:description" content="Portfolio Syahdan Pratama - Web Development, UI/UX, dan Digital Design.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/sija.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2307070a'/%3E%3Ctext x='50' y='66' font-size='48' font-family='monospace' font-weight='700' text-anchor='middle' fill='%23ff167f'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,33 +29,35 @@
 
 <body>
 
+    <a href="#main" class="skip-link">Lewati ke konten utama</a>
+
     <!-- NAVBAR -->
-    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+    <nav id="mainNavbar" class="navbar navbar-expand-xl fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">
-                <span class="brand-symbol">&lt;/&gt;</span>
+            <a class="navbar-brand" href="#home" aria-label="Beranda">
+                <span class="brand-symbol">&lt;/&gt;</span>Syahdan
             </a>
 
             <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Buka menu navigasi">
                 <i class="bi bi-list"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
+                <ul class="navbar-nav ms-auto align-items-xl-center">
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <button id="themeToggle" class="theme-toggle"
-                            aria-label="Toggle light mode" title="Toggle theme">
+                    <li class="nav-item ms-xl-3">
+                        <button id="themeToggle" class="theme-toggle" type="button"
+                            aria-label="Ganti tema" title="Ganti tema">
                             <i class="bi bi-sun"></i>
                         </button>
                     </li>
@@ -61,14 +66,14 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
 
         <!-- HERO -->
         <section id="home" class="hero-section section">
             <div class="hero-grid"></div>
 
             <div class="container">
-                <div class="row align-items-center min-vh-100">
+                <div class="row align-items-center">
                     <div class="col-lg-7">
                         <div class="hero-content reveal">
                             <span class="status-badge">
@@ -78,7 +83,9 @@
 
                             <p class="hero-small-title">HELLO, I'M</p>
                             <h1>Syahdan Pratama</h1>
-                            <h2>Programmer Website</h2>
+                            <h2 aria-label="Programmer Website">
+                                <span id="typedRole">Programmer Website</span><span class="typed-cursor" aria-hidden="true">|</span>
+                            </h2>
 
                             <p class="hero-description">
                                 Saya memiliki ketertarikan pada web development,
@@ -90,27 +97,18 @@
 
                             <div class="hero-buttons">
                                 <a href="#projects" class="btn btn-primary-custom">
-                                    View My Projects
-                                    <i class="bi bi-arrow-up-right"></i>
+                                    Lihat Project <i class="bi bi-arrow-up-right"></i>
                                 </a>
-
-                                <a href="assets/CV-Syahdan-Pratama.pdf"
-                                    class="btn btn-outline-custom" download>
-                                    Download CV
-                                    <i class="bi bi-download"></i>
+                                <a href="assets/CV-Syahdan-Pratama.pdf" class="btn btn-outline-custom" download>
+                                    Download CV <i class="bi bi-download"></i>
                                 </a>
                             </div>
 
+                            <!-- TODO: ganti "#" dengan link akun kamu -->
                             <div class="hero-socials">
-                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -123,8 +121,8 @@
                                 <div class="profile-corner corner-bottom"></div>
 
                                 <img src="assets/images/profile.jpg"
-                                    alt="Foto profil Syahdan Pratama"
-                                    class="profile-image">
+                                     alt="Foto profil Syahdan Pratama"
+                                     class="profile-image" width="380" height="475">
 
                                 <div class="profile-label">
                                     <span>PORTFOLIO</span>
@@ -136,7 +134,7 @@
                 </div>
             </div>
 
-            <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+            <a href="#about" class="scroll-indicator" aria-label="Scroll ke bagian about">
                 <span>SCROLL</span>
                 <i class="bi bi-arrow-down"></i>
             </a>
@@ -156,7 +154,7 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-5 reveal">
                         <div class="about-image-card">
-                            <img src="assets/images/sija.jpg" alt="Syahdan Pratama">
+                            <img src="assets/images/sija.jpg" alt="Gedung-gedung tinggi dilihat dari bawah" loading="lazy">
                             <div class="about-image-overlay">
                                 <i class="bi bi-geo-alt-fill"></i> Indonesia
                             </div>
@@ -241,36 +239,53 @@
                     </div>
                 </div>
 
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 reveal">
-                        <a href="#" class="project-card" target="_blank" rel="noopener noreferrer">
+                <div class="project-filters reveal" role="group" aria-label="Filter project">
+                    <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+                    <button type="button" class="filter-btn" data-filter="web">Web Development</button>
+                    <button type="button" class="filter-btn" data-filter="uiux">UI/UX</button>
+                </div>
+
+                <div class="row g-4" id="projectGrid">
+
+                    <!-- PROJECT 1: RUMI -->
+                    <div class="col-md-6 col-lg-4 project-col reveal" data-category="web uiux">
+                        <article class="project-card" data-project="rumi" tabindex="0" role="button"
+                                 aria-label="Lihat detail project RUMI Furnitur">
                             <div class="project-image">
-                                <img src="assets/images/project-1.jpg" alt="Project 1">
+                                <img src="assets/images/project-1.jpg" alt="Tampilan website RUMI Furnitur" loading="lazy">
                                 <div class="project-overlay"><i class="bi bi-arrow-up-right"></i></div>
                             </div>
                             <div class="project-content">
                                 <div class="project-meta"><span>WEB DEVELOPMENT</span><span>2026</span></div>
-                                <h3>Nama Project 1</h3>
-                                <p>Deskripsi singkat tentang project ini.</p>
+                                <h3>RUMI Furnitur</h3>
+                                <p>Website toko furnitur kayu modular dengan katalog, keranjang, dan checkout via WhatsApp.</p>
                                 <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
                             </div>
-                        </a>
+                        </article>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 reveal">
-                        <a href="#" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <!-- PROJECT 2: Portfolio -->
+                    <div class="col-md-6 col-lg-4 project-col reveal" data-category="web uiux">
+                        <article class="project-card" data-project="portfolio" tabindex="0" role="button"
+                                 aria-label="Lihat detail project Portfolio Website">
                             <div class="project-image">
-                                <img src="assets/images/project-2.jpg" alt="Project 2">
+                                <img src="assets/images/project-2.jpg" alt="Tampilan website portfolio" loading="lazy">
                                 <div class="project-overlay"><i class="bi bi-arrow-up-right"></i></div>
                             </div>
                             <div class="project-content">
-                                <div class="project-meta"><span>UI/UX</span><span>2026</span></div>
-                                <h3>Nama Project 2</h3>
-                                <p>Deskripsi singkat tentang project ini.</p>
-                                <div class="tech-list"><span>Figma</span><span>Bootstrap</span></div>
+                                <div class="project-meta"><span>UI/UX &amp; WEB</span><span>2026</span></div>
+                                <h3>Portfolio Website</h3>
+                                <p>Portfolio pribadi bertema gelap dengan mode terang, animasi scroll, dan layout responsif.</p>
+                                <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div>
                             </div>
-                        </a>
+                        </article>
                     </div>
+                </div>
+
+                <div class="project-empty" id="projectEmpty" hidden>
+                    <i class="bi bi-folder2-open"></i>
+                    <h3>Belum ada project</h3>
+                    <p>Project di kategori ini akan segera ditambahkan.</p>
                 </div>
             </div>
         </section>
@@ -286,6 +301,7 @@
                     </div>
                 </div>
 
+                <!-- TODO: ganti dengan pengalaman asli -->
                 <div class="timeline">
                     <div class="timeline-item reveal">
                         <div class="timeline-date">2026</div>
@@ -329,7 +345,7 @@
                             <div class="education-icon"><i class="bi bi-mortarboard"></i></div>
                             <div>
                                 <span class="education-year">2024 — SEKARANG</span>
-                                <h3>SMK Nama Sekolah</h3>
+                                <h3>SMK industri kreatif</h3>
                                 <p>Sistem Informasi Jaringan Aplikasi (SIJA)</p>
                             </div>
                         </div>
@@ -338,8 +354,8 @@
                         <div class="education-card">
                             <div class="education-icon cyan"><i class="bi bi-book"></i></div>
                             <div>
-                                <span class="education-year">2021 — 2024</span>
-                                <h3>SMP Nama Sekolah</h3>
+                                <span class="education-year">2020 — 2023</span>
+                                <h3>SMP pgri bantargebang</h3>
                                 <p>Sekolah Menengah Pertama</p>
                             </div>
                         </div>
@@ -426,15 +442,18 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label for="name">Nama</label>
-                                    <input type="text" id="name" class="form-control" placeholder="Nama kamu" required>
+                                    <input type="text" id="name" class="form-control" placeholder="Nama kamu" autocomplete="name" required>
+                                    <div class="invalid-feedback">Nama wajib diisi.</div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="email@kamu.com" required>
+                                    <input type="email" id="email" class="form-control" placeholder="email@kamu.com" autocomplete="email" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
                                 </div>
                                 <div class="col-12">
                                     <label for="message">Pesan</label>
-                                    <textarea id="message" rows="5" class="form-control" placeholder="Tulis pesan..." required></textarea>
+                                    <textarea id="message" rows="5" class="form-control" placeholder="Tulis pesan..." minlength="10" required></textarea>
+                                    <div class="invalid-feedback">Pesan minimal 10 karakter.</div>
                                 </div>
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary-custom">
@@ -442,7 +461,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <p id="formMessage" class="form-message"></p>
+                            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
                         </form>
                     </div>
                 </div>
@@ -451,7 +470,38 @@
 
     </main>
 
-    <button id="backToTop" aria-label="Back to top" title="Back to top">
+    <!-- PROJECT MODAL -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalTitle">Detail Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" class="modal-project-image" src="" alt="">
+                    <span class="modal-category" id="modalCategory"></span>
+                    <h3 id="modalName"></h3>
+                    <p id="modalDesc"></p>
+
+                    <div class="modal-details">
+                        <div><span>PERAN</span><p id="modalRole"></p></div>
+                        <div><span>TEKNOLOGI</span><p id="modalTech"></p></div>
+                    </div>
+
+                    <ul class="modal-features" id="modalFeatures"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Tutup</button>
+                    <a id="modalLink" href="#" class="btn btn-primary-custom" target="_blank" rel="noopener noreferrer">
+                        Kunjungi Website <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" type="button" aria-label="Kembali ke atas" title="Kembali ke atas">
         <i class="bi bi-arrow-up"></i>
     </button>
 
@@ -464,15 +514,9 @@
                 </div>
 
                 <div class="footer-socials">
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>
 
